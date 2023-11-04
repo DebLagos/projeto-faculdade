@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+
+    <link rel="stylesheet" href="componentes.css">
+    <link rel="stylesheet" href="palheta.css">
+    <link rel="stylesheet" href="titulos.css">
+    <link rel="stylesheet" href="fonts/remixicon.css">
+</head>
+
+<body>
+    <header class="cabecalho fundo-branco">
+        <div class="conteudo-cabecalho">
+            <img src="images/logo.png" alt="" class="logo">
+            <button class="btn fundo-roxo-500 texto-branco">Sair</button>
+        </div>
+    </header>
+
+    <h1>Pagamentos</h1>
+    <h2>
+        Medico Selecionado
+    </h2>
+    <form class="pagamento" action="">
+        <p>Forma de Pagamento:</p><br>
+        <label for="name">Nome*</label><br>
+        <input class="name" type="text" id="name" name="name" required placeholder="Nome completo" required="required"
+            maxlength="50"><br><br>
+
+        <label for="phone-number"> Telefone</label><br>
+        <input class="telefone" type="tel" id="phone-number" name="phone-number" required placeholder="(00)00000-0000"
+            pattern="\d{2}\\d{5}\-\d{4}"><br><br>
+
+        <label for="number-card">Número do Cartão*</label><br>
+        <input class="number-card" type="text" id="number-card" name="number-card" required
+            placeholder="Numero do cartão" required="required" maxlength="50"><br><br>
+
+        <label for="state" class="text">Vencimento*</label><br />
+        <select name=“selOpcao” class="text">
+            <option value=“1” selected=“month”>Mês</option>
+            <option value="mes">01</option>
+            <option value="mes">02</option>
+            <option value="mes">03</option>
+            <option value="mes">04</option>
+            <option value="mes">05</option>
+            <option value="mes">06</option>
+            <option value="mes">07</option>
+            <option value="mes">08</option>
+            <option value="mes">09</option>
+            <option value="mes">10</option>
+            <option value="mes">11</option>
+            <option value="mes">12</option>
+        </select><br>
+        <label for="state" class="text"></label><br />
+        <select name=“selOpcao” class="text">
+            <option value=“1” selected=“year”>Ano</option>
+            <option value="ano">2023</option>
+            <option value="ano">2024</option>
+            <option value="ano">2025</option>
+            <option value="ano">2026</option>
+            <option value="ano">2027</option>
+            <option value="ano">2028</option>
+            <option value="ano">2029</option>
+            <option value="ano">2030</option>
+            <option value="ano">2031</option>
+            <option value="ano">2032</option>
+        </select><br><br>
+
+        <label for="code">Código de Segurança*</label><br>
+        <input class="code" type="text" id="code" name="code" required placeholder="" required="required"
+            maxlength="50"><br>
+
+        <input type="checkbox" id="save" name="save" value="save">
+        <label for="save">Salvar cartão</label><br>
+
+        <div class="button-field">
+            <button class="enter" type="submit">Agendar</button>
+
+    </form>
+
+
+
+
+
+    <footer class="rodape fundo-branco">
+
+        <div class="conteudo-rodape">
+            <div>
+                <img src="images/logo.png" alt="" class="logo">
+                <p>
+                    Contatos:
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p>
+                    Siga a gente:
+                </p>
+                <ul class="redes-sociais">
+                    <li>
+                        <i class="ri-whatsapp-line"></i>
+                    </li>
+                    <li>
+                        <i class="ri-instagram-line"></i>
+                    </li>
+                    <li>
+                        <i class="ri-facebook-circle-fill"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    Site seguro
+                    <i class="ri-lock-fill"></i>
+                </p>
+                <p class="margin-bottom-0">
+                    Formas de pagamento
+                </p>
+                <ul class="cartoes">
+                    <li>
+                        <img src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135018-mastercard_82253.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135018-mastercard_82253.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135018-mastercard_82253.png"
+                            alt="">
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+</body>
