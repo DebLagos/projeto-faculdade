@@ -40,6 +40,13 @@ a {
     text-decoration: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #A47BBE;
+    border: 1px solid #A47BBE;
 }
 
 .btn-grande {
