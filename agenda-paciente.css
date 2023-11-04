@@ -6,12 +6,29 @@
 }
 
 
-.agendamento tr,
-.agendamento td {
-    border: 1px solid black;
-    padding: 5px;
+.agendamento tr:not(:first-child) td {
+
+    background-color: white;
+    padding: 10px;
+
+
 }
 
 .conteudo-botao {
     text-align: center;
+}
+
+.agendamento {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+/*todas as tr menos a primeira, e a primeira td*/
+.agendamento tr:not(:first-child) td:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+
+/*todas as tr menos a primeira, e a ultima td*/
+.agendamento tr:not(:first-child) td:last-child {
+    border-radius: 0px 10px 10px 0px;
 }
