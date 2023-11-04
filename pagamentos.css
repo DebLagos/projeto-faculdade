@@ -22,4 +22,9 @@
 .calendario td {
 
     border: 1px solid black;
+    padding: 5px;
+}
+
+.dias-passados {
+    color: #C9B0D8;
 }
