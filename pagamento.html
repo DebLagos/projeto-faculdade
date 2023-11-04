@@ -33,7 +33,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <form class="pagamento" action="">
+
                 <p>Forma de Pagamento:</p><br>
+
                 <label for="name">Nome*</label><br>
                 <input class="name" type="text" id="name" name="name" required placeholder="Nome completo"
                     required="required" maxlength="50"><br><br>
@@ -42,50 +44,57 @@
                 <input class="telefone" type="tel" id="phone-number" name="phone-number" required
                     placeholder="(00)00000-0000" pattern="\d{2}\\d{5}\-\d{4}"><br><br>
 
-                <label for="number-card">Número do Cartão*</label><br>
-                <input class="number-card" type="text" id="number-card" name="number-card" required
-                    placeholder="Numero do cartão" required="required" maxlength="50"><br><br>
+                <div class="conteudo-cartao">
+                    <label for="number-card">Número do Cartão*</label><br>
+                    <input class="number-card" type="text" id="number-card" name="number-card" required
+                        placeholder="Numero do cartão" required="required" maxlength="50">
+                    <i class="ri-bank-card-line"></i>
+                </div>
+                <br><br>
+                <label for="state">Vencimento*</label><br />
 
-                <label for="state" class="text">Vencimento*</label><br />
-                <select name=“selOpcao” class="text">
-                    <option value=“1” selected=“month”>Mês</option>
-                    <option value="mes">01</option>
-                    <option value="mes">02</option>
-                    <option value="mes">03</option>
-                    <option value="mes">04</option>
-                    <option value="mes">05</option>
-                    <option value="mes">06</option>
-                    <option value="mes">07</option>
-                    <option value="mes">08</option>
-                    <option value="mes">09</option>
-                    <option value="mes">10</option>
-                    <option value="mes">11</option>
-                    <option value="mes">12</option>
-                </select><br>
-                <label for="state" class="text"></label><br />
-                <select name="selOpcao" class="text">
-                    <option value="1" selected="year">Ano</option>
-                    <option value="ano">2023</option>
-                    <option value="ano">2024</option>
-                    <option value="ano">2025</option>
-                    <option value="ano">2026</option>
-                    <option value="ano">2027</option>
-                    <option value="ano">2028</option>
-                    <option value="ano">2029</option>
-                    <option value="ano">2030</option>
-                    <option value="ano">2031</option>
-                    <option value="ano">2032</option>
-                </select><br><br>
+                <div class="conteudo-vencimento">
 
+                    <select name="selOpcao">
+                        <option value="1" selected="month">Mês</option>
+                        <option value="mes">01</option>
+                        <option value="mes">02</option>
+                        <option value="mes">03</option>
+                        <option value="mes">04</option>
+                        <option value="mes">05</option>
+                        <option value="mes">06</option>
+                        <option value="mes">07</option>
+                        <option value="mes">08</option>
+                        <option value="mes">09</option>
+                        <option value="mes">10</option>
+                        <option value="mes">11</option>
+                        <option value="mes">12</option>
+                    </select>
+
+                    <select name="selOpcao">
+                        <option value="1" selected="year">Ano</option>
+                        <option value="ano">2023</option>
+                        <option value="ano">2024</option>
+                        <option value="ano">2025</option>
+                        <option value="ano">2026</option>
+                        <option value="ano">2027</option>
+                        <option value="ano">2028</option>
+                        <option value="ano">2029</option>
+                        <option value="ano">2030</option>
+                        <option value="ano">2031</option>
+                        <option value="ano">2032</option>
+                    </select>
+                </div>
+                <br>
                 <label for="code">Código de Segurança*</label><br>
                 <input class="code" type="text" id="code" name="code" required placeholder="" required="required"
-                    maxlength="50"><br>
+                    maxlength="50"><br><br>
 
                 <input type="checkbox" id="save" name="save" value="salvar">
-                <label for="save">Salvar cartão</label><br>
+                <label for="save">Salvar cartão</label><br><br>
 
                 <div class="button-field">
-                    <button class="enter" type="submit">Agendar</button>
+                    <button type="submit">Agendar</button>
                 </div>
             </form>
         </div>
@@ -340,3 +349,5 @@
     </footer>
 
 </body>
+
+</html>

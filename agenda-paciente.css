@@ -1,0 +1,17 @@
+.conteudo-listagem {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.agendamento tr,
+.agendamento td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.conteudo-botao {
+    text-align: center;
+}
