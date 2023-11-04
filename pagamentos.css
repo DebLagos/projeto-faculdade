@@ -1,0 +1,25 @@
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-pagamento {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.conteudo-calendario {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+
+}
+
+.calendario tr,
+.calendario td {
+
+    border: 1px solid black;
+}
