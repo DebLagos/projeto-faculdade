@@ -10,12 +10,57 @@
     flex-direction: column;
 }
 
-.form-pagameto input {
+.form-pagameto input:not([type="checkbox"]) {
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #949494;
     display: flex;
     width: 300px;
+}
+
+.conteudo-cartao {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #a4b0be;
+    background-color: #ffffff;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.cartao {
+    border: none !important;
+    padding: 3px !important;
+    outline: none;
+    width: 100%;
+}
+
+.conteudo-vencimento select {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #949494;
+    width: 100px;
+}
+
+.conteudo-parcelas {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #949494;
+    width: 200px;
+}
+
+.form-pagameto button {
+    width: 175px;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.conteudo-agendar {
+
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .conteudo-calendario {
@@ -89,4 +134,8 @@
     width: 100%;
     padding: 25px;
 
+}
+
+.conteudo-salvar-cartao {
+    display: inline-flex;
 }

@@ -45,17 +45,18 @@
                 <input class="name" type="text" id="name" name="name" required placeholder="Nome completo"
                     required="required" maxlength="50"><br>
 
-                <label for="phone-number"> Telefone</label><br>
+                <label for="phone-number"> Telefone*</label><br>
                 <input class="telefone" type="tel" id="phone-number" name="phone-number" required
                     placeholder="(00)00000-0000" pattern="\d{2}\\d{5}\-\d{4}"><br>
 
-                <div class="conteudo-cartao">
-                    <label for="number-card">Número do Cartão*</label><br>
-                    <input class="number-card" type="text" id="number-card" name="number-card" required
-                        placeholder="Numero do cartão" required="required" maxlength="14">
-                    <i class="ri-bank-card-line"></i>
+                <div class="">
+                    <label class="conteudo-cartao" for="number-card">
+                        <input class="cartao" type="text" id="number-card" name="number-card" required
+                            placeholder="Numero do cartão" required="required" maxlength="20">
+                        <i class="ri-bank-card-line"></i>
+                    </label>
                 </div>
-
+                <br>
                 <label for="state">Vencimento*</label><br />
 
                 <div class="conteudo-vencimento">
@@ -89,14 +90,11 @@
                         <option value="ano">2031</option>
                         <option value="ano">2032</option>
                     </select>
+
                 </div>
                 <br>
-                <label for="code">Código de Segurança*</label><br>
-                <input class="code" type="text" id="code" name="code" required placeholder="" required="required"
-                    maxlength="50"><br><br>
-
-                <label for="parcelas">Parcelas</label><br>
-                <select id="parcelas" name="parcelas">
+                <label for="parcelas">Parcelas*</label><br>
+                <select class="conteudo-parcelas" id="parcelas" name="parcelas">
                     <option value="Selecione">Selecione uma parcela</option>
                     <option value="1">1x</option>
                     <option value="2">2x</option>
@@ -112,11 +110,21 @@
                     <option value="12">12x</option>
                 </select>
                 <br><br>
-                <input type="checkbox" id="save" name="save" value="salvar">
-                <label for="save">Salvar cartão</label><br><br>
 
-                <div class="button-field">
-                    <button type="submit">Agendar</button>
+                <label for="code">Código de Segurança*</label><br>
+                <input type="text" id="code" name="code" required placeholder="" required="required" maxlength="4">
+
+
+                <br>
+
+                <label class="conteudo-salvar-cartao" for="salvarCartao">
+
+                    <input type="checkbox" id="salvarCartao" name="salvarCartao" value="sim">
+                    Salvar informações do cartão
+                </label>
+
+                <div class="conteudo-agendar">
+                    <button class="btn btn-lista fundo-roxo-500 texto-branco" type="submit">Agendar</button>
                 </div>
             </form>
         </div>
@@ -131,7 +139,7 @@
                     </tr>
                     <tr>
                         <td colspan="7">
-                            <span class="conteudo-mes">Novembro 2023</span>
+                            <id class="conteudo-mes">Novembro 2023</id>
                         </td>
                     </tr>
                     <tr>
