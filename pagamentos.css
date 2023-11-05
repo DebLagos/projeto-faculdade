@@ -10,6 +10,14 @@
     flex-direction: column;
 }
 
+.form-pagameto input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #949494;
+    display: flex;
+    width: 300px;
+}
+
 .conteudo-calendario {
     display: flex;
     flex: 1;
@@ -22,10 +30,63 @@
 .calendario tr,
 .calendario td {
 
-    border: 1px solid black;
-    padding: 5px;
+    /* border: 1px solid #C2C2C2; */
+    /* padding: 5px; */
+    text-align: center;
 }
 
 .dias-passados {
     color: #C9B0D8;
+}
+
+/* componentes para selecionar a caixa do dia*/
+.calendario label {
+    width: 100%;
+    display: flex;
+}
+
+/*então se o input estiver checado ele vai selecionar o span*/
+.calendario input:checked+span {
+    background-color: #C9B0D8;
+
+}
+
+.calendario input+span {
+
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+/*ocutar os radios do calendario*/
+.calendario input[type="radio"] {
+
+    display: none;
+}
+
+.calendario {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.calendario span:hover {
+    background-color: #C9B0D8;
+}
+
+.calendario tr:first-child td {
+    border-radius: 80px;
+}
+
+.conteudo-calendario .card {
+    padding: 13px;
+}
+
+.conteudo-mes {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 25px;
+
 }

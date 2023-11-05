@@ -23,13 +23,14 @@
 
     <header class="cabecalho fundo-branco">
         <div class="conteudo-cabecalho">
-            <img src="images/logo-med.png" alt="" class="logo">
+            <div class="conteudo-logo">
+                <img src="images/logo-med.png" alt="" class="logo logo-icone">
 
-            <img src="images/logo-tipograh.png" alt="" class="logo">
+                <img src="images/logo-tipograh.png" alt="" class="logo logo-texto ">
+            </div>
 
-            <a href="#" class="btn fundo-roxo-500 texto-branco">Sair</a>
+            <a href="#" class="btn btn-sair fundo-roxo-500 texto-branco">Sair</a>
         </div>
-
     </header>
 
     <div class="conteudo-principal">
@@ -41,7 +42,7 @@
                 Meus Agendamentos
             </h1>
             <br>
-            <label>
+            <label class="conteudo-filtro">
                 <input class="filtro" type="text" id="filtro" name="filtro" required="required" maxlength="10">
                 <i class="ri-search-line"></i>
             </label>
@@ -57,7 +58,16 @@
                             Data do Agendamento
                         </td>
                     </tr>
-
+                    <tr>
+                        <td>Eletrocardiograma</td>
+                        <td>10/12/2023 &nbsp 09:00 &nbsp</td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco">Ver detalhes</button>
+                        </td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco">Cancelar Agendamento</button>
+                        </td>
+                    </tr>
                     <tr>
                         <td>Cardiologista</td>
                         <td>15/12/2023 &nbsp 15:00 &nbsp</td>
@@ -68,7 +78,6 @@
                             <button class="btn fundo-roxo-500 texto-branco">Cancelar Agendamento</button>
                         </td>
                     </tr>
-
 
                     <tr>
                         <td>Dermatologista</td>
@@ -81,22 +90,11 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>Eletrocardiograma</td>
-                        <td>10/12/2023 &nbsp 09:00 &nbsp</td>
-                        <td>
-                            <button class="btn fundo-roxo-500 texto-branco">Ver detalhes</button>
-                        </td>
-                        <td>
-                            <button class="btn fundo-roxo-500 texto-branco">Cancelar Agendamento</button>
-                        </td>
-                    </tr>
-
                 </table>
             </div>
             <br><br>
             <div class="conteudo-botao">
-                <button type="submit">Ver Mais</button>
+                <button class="btn btn-lista fundo-roxo-500 texto-branco" type="submit">Ver Mais</button>
             </div>
         </div>
 
@@ -108,7 +106,9 @@
 
         <div class="conteudo-rodape">
             <div>
-                <img src="images/logo-tipograh.png" alt="" class="logo">
+
+                <img src="images/logo-tipograh.png" alt="" class="logo logo-texto">
+
                 <p>
                     Cuidando de você hoje e sempre!
                 </p>

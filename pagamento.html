@@ -17,10 +17,13 @@
 <body>
     <header class="cabecalho fundo-branco">
         <div class="conteudo-cabecalho">
-            <img src="images/logo-med.png" alt="" class="logo">
+            <div class="conteudo-logo">
+                <img src="images/logo-med.png" alt="" class="logo logo-icone">
 
-            <img src="images/logo-tipograh.png" alt="" class="logo">
-            <a href="#" class="btn fundo-roxo-500 texto-branco">Sair</a>
+                <img src="images/logo-tipograh.png" alt="" class="logo logo-texto ">
+            </div>
+
+            <a href="#" class="btn btn-sair fundo-roxo-500 texto-branco">Sair</a>
         </div>
     </header>
     <div class="conteudo-principal">
@@ -34,30 +37,30 @@
                 diversas doenças
                 relacionadas à nossa pele.
             </p>
-            <form class="pagamento" action="">
+            <form class="form-pagameto">
 
                 <p>Forma de Pagamento:</p><br>
 
-                <label for="name">Nome*</label><br>
+                <label for="name">Nome*</label>
                 <input class="name" type="text" id="name" name="name" required placeholder="Nome completo"
-                    required="required" maxlength="50"><br><br>
+                    required="required" maxlength="50"><br>
 
                 <label for="phone-number"> Telefone</label><br>
                 <input class="telefone" type="tel" id="phone-number" name="phone-number" required
-                    placeholder="(00)00000-0000" pattern="\d{2}\\d{5}\-\d{4}"><br><br>
+                    placeholder="(00)00000-0000" pattern="\d{2}\\d{5}\-\d{4}"><br>
 
                 <div class="conteudo-cartao">
                     <label for="number-card">Número do Cartão*</label><br>
                     <input class="number-card" type="text" id="number-card" name="number-card" required
-                        placeholder="Numero do cartão" required="required" maxlength="50">
+                        placeholder="Numero do cartão" required="required" maxlength="14">
                     <i class="ri-bank-card-line"></i>
                 </div>
-                <br><br>
+
                 <label for="state">Vencimento*</label><br />
 
                 <div class="conteudo-vencimento">
 
-                    <select name="selOpcao">
+                    <select name="selOpcao" required>
                         <option value="1" selected="month">Mês</option>
                         <option value="mes">01</option>
                         <option value="mes">02</option>
@@ -92,6 +95,23 @@
                 <input class="code" type="text" id="code" name="code" required placeholder="" required="required"
                     maxlength="50"><br><br>
 
+                <label for="parcelas">Parcelas</label><br>
+                <select id="parcelas" name="parcelas">
+                    <option value="Selecione">Selecione uma parcela</option>
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                    <option value="6">6x</option>
+                    <option value="7">7x</option>
+                    <option value="8">8x</option>
+                    <option value="9">9x</option>
+                    <option value="10">10x</option>
+                    <option value="11">11x</option>
+                    <option value="12">12x</option>
+                </select>
+                <br><br>
                 <input type="checkbox" id="save" name="save" value="salvar">
                 <label for="save">Salvar cartão</label><br><br>
 
@@ -101,195 +121,227 @@
             </form>
         </div>
         <div class="conteudo-calendario">
-            <table class="calendario">
+            <div class="card">
+                <table class="calendario">
 
-                <tr>
-                    <td colspan="7">
-                        Calendário
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="7">
-                        Novembro
-                    </td>
-                </tr>
-                <tr>
-                    <td>Dom</td>
-                    <td>Seg</td>
-                    <td>Ter</td>
-                    <td>Qua</td>
-                    <td>Qui</td>
-                    <td>Sex</td>
-                    <td>Sáb</td>
-                </tr>
-                <tr>
-                    <td class="dias-passados">30</td>
+                    <tr>
+                        <td colspan="7">
+                            Calendário
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <span class="conteudo-mes">Novembro 2023</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dom</td>
+                        <td>Seg</td>
+                        <td>Ter</td>
+                        <td>Qua</td>
+                        <td>Qui</td>
+                        <td>Sex</td>
+                        <td>Sáb</td>
+                    </tr>
+                    <tr>
+                        <td class="dias-passados">30</td>
 
-                    <td class="dias-passados">31</td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="01">01
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="02">02
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="03">03
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="04">04
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="05">05
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="06">06
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="07">07
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="08">08
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="09">09
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="10">10
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="11">11
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="12">12
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="13">13
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="14">14
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="15">15
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="16">16
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="17">17
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="18">18
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="19">19
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="20">20
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="21">21
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="22">22
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="23">23
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="24">24
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="25">25
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="26">26
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="27">27
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="28">28
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="29">29
-                        </label>
-                    </td>
-                    <td>
-                        <label>
-                            <input type="radio" name="dia" value="30">30
-                        </label>
-                    </td>
-                    <td class="dias-passados">01</td>
-                    <td class="dias-passados">02</td>
-                    <td class="dias-passados">03</td>
-                </tr>
+                        <td class="dias-passados">31</td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="01">
+                                <span>01</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="02">
+                                <span>02</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="03">
+                                <span>03</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="04">
+                                <span>04</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="05">
+                                <span>05</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="06">
+                                <span>06</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="07">
+                                <span>07</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="08">
+                                <span>08</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="09">
+                                <span>09</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="10">
+                                <span>10</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="11">
+                                <span>11</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="12">
+                                <span>12</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="13">
+                                <span>13</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="14">
+                                <span>14</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="15">
+                                <span>15</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="16">
+                                <span>16</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="17">
+                                <span>17</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="18">
+                                <span>18</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="19">
+                                <span>19</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="20">
+                                <span>20</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="21">
+                                <span>21</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="22">
+                                <span>22</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="23">
+                                <span>23</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="24">
+                                <span>24</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="25">
+                                <span>25</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="26">
+                                <span>26</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="27">
+                                <span>27</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="28">
+                                <span>28</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="29">
+                                <span>29</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="dia" value="30">
+                                <span>30</span>
+                            </label>
+                        </td>
+                        <td class="dias-passados">01</td>
+                        <td class="dias-passados">02</td>
+                        <td class="dias-passados">03</td>
+                    </tr>
 
-            </table>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -299,7 +351,9 @@
 
         <div class="conteudo-rodape">
             <div>
-                <img src="images/logo-tipograh.png" alt="" class="logo">
+
+                <img src="images/logo-tipograh.png" alt="" class="logo logo-texto">
+
                 <p>
                     Cuidando de você hoje e sempre!
                 </p>

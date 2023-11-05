@@ -14,10 +14,8 @@
 
 }
 
-.conteudo-botao {
-    text-align: center;
-    border-radius: 5px;
-
+.conteudo-agendamento {
+    padding-bottom: 100px;
 }
 
 .agendamento {
@@ -36,8 +34,32 @@
 }
 
 .filtro {
-    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    outline: none;
+    width: 100%;
+}
+
+.conteudo-filtro {
+    border-radius: 10px;
     padding: 10px;
     border: 1px solid #a4b0be;
+    background-color: #ffffff;
+    width: 291px;
+    display: flex;
+    align-items: center;
+
+}
+
+.conteudo-botao {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.btn-lista {
+    width: 174px;
+    justify-content: center;
 
 }
