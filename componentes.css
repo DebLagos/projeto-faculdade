@@ -54,11 +54,27 @@ a {
 }
 
 .logo {
-    width: 190px;
-    height: 61px;
+    /* width: 190px; */
+    /* height: 61px; */
     object-fit: contain;
 }
 
+.logo-icone {
+
+    height: 102px;
+    width: 96px;
+}
+
+.logo-texto {
+    /* height: 102px; */
+    width: 151px;
+    margin-bottom: 23px;
+}
+
+.conteudo-logo {
+    display: flex;
+    align-items: flex-end;
+}
 
 /** ============== CABEÇALHO ==================================== */
 
