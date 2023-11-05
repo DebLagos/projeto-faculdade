@@ -16,6 +16,8 @@
 
 .conteudo-botao {
     text-align: center;
+    border-radius: 5px;
+
 }
 
 .agendamento {
@@ -31,4 +33,11 @@
 /*todas as tr menos a primeira, e a ultima td*/
 .agendamento tr:not(:first-child) td:last-child {
     border-radius: 0px 10px 10px 0px;
+}
+
+.filtro {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #a4b0be;
+
 }
