@@ -11,10 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="componentes-contato.css">
+    <link rel="stylesheet" href="componentes.css">
     <link rel="stylesheet" href="palheta.css">
     <link rel="stylesheet" href="titulos.css">
     <link rel="stylesheet" href="fonts/remixicon.css">
+    <link rel="stylesheet" href="contatos.css">
 </head>
 
 <body>
@@ -54,44 +55,46 @@
 
         <img src="images/contato-medvida.jpg" alt="" class="imagem-principal">
 
-        <div class="artigos">
-                        <div class="formulario">
-                            <form action="">
-                                <div class="titulo">
-                                    <h1>Fale Conosco</h1>
-                                </div>
-                                <br>
-                                   <div class="informação">
-                                       <h3>Solicitar informações</h3>
-                                   </div>
-                                   <br>
-                                   <div>
-                                       <label for="" class="nome">Nome</label><br>
-                                       <input type="text" size="102" required="required" placeholder="Nome Completo"><br><br>
-                                   </div>
-                                   <div class="email e telefone">
-                                       <label for="">E-mail</label>
-                                       <label for="" style="margin-left: 345px ;">Telefone</label><br>
-                                       <input type="email" size="49" required="required" placeholder="xxxxxxx@xxxx.com">
-                                       <input type="tel" size="49" required="required" placeholder="(99) 99999-9999" pattern="\(\d{2}\)\s\d{5}-\d{3}" title="99999-9999"><br><br>
-                                   </div>
-                                   <div class="mensagem">
-                                       <label for=""> Mensagem</label><br>
-                                       <textarea rows="7" cols="103" placeholder="Digite sua dúvida aqui" style="resize: none;"></textarea>
-                                   </div>
-                                   <div>
-                                       <a class="btn fundo-roxo-500 texto-branco" href="#">Enviar</a> <br><br>
-                                   </div>
-                           
-                            </form>
+
+        <div class="formulario">
+            <form class="conteudo-contato">
+                <div class="conteudo-listagem">
+                    <h1>
+                        Fale Conosco
+                    </h1>
+                    <br>
+                    <h3>
+                        Solicitar informações
+                    </h3>
+                    <br>
+                    <div class="conteudo-nome">
+                        <label for="nome">Nome*</label><br>
+                        <input type="text" required="required" placeholder="Nome Completo">
+                    </div>
+                    <div class="conteudo-email-telefone">
+                        <div class="conteudo-email">
+                            <label for="email">E-mail*</label>
+                            <input type="email" required="required" placeholder="xxxxxxx@xxxx.com">
                         </div>
+                        <div class="conteudo-telefone">
+                            <label for="phone-number"> Telefone*</label>
+                            <input class="telefone" type="tel" id="phone-number" name="phone-number" required
+                                placeholder="(00)00000-0000" pattern="\d{2}\\d{5}\-\d{4}">
+                        </div>
+                    </div>
+                    <div class="conteudo-mensagem">
+                        <label for="mensagem"> Mensagem*</label>
+                        <textarea rows="7" cols="103" placeholder="Digite sua dúvida aqui" required></textarea>
+
+                    </div>
+                    <div class="conteudo-enviar">
+                        <button class="btn btn-lista fundo-roxo-500 texto-branco" type="submit">Enviar</button>
+                        <br><br>
+
+                    </div>
                 </div>
-
-
-
+            </form>
         </div>
-
-
     </div>
 
     <footer class="rodape fundo-branco">

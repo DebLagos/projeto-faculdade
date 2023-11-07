@@ -1,0 +1,72 @@
+.cabecalho {
+    /* width: 100%; */
+    box-shadow: 1px 1px 6px #4F4F4F;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-contato button {
+    width: 174px;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.conteudo-email-telefone {
+    display: flex;
+}
+
+.conteudo-email,
+.conteudo-telefone {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.conteudo-email input,
+.conteudo-telefone input {
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #949494;
+    display: flex;
+    width: 300px;
+}
+
+.conteudo-mensagem textarea {
+    resize: none;
+    border: 1px solid #949494;
+}
+
+.conteudo-mensagem {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+
+.conteudo-nome input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #949494;
+    display: flex;
+    width: 300px;
+}
+
+.conteudo-nome {
+    margin-bottom: 30px;
+}
+
+.conteudo-enviar {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
