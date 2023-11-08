@@ -37,7 +37,7 @@
                 diversas doenças
                 relacionadas à nossa pele.
             </p>
-            <form class="form-pagameto">
+            <form id="form-pagamento" novalidate class="form-pagameto">
 
                 <p>Forma de Pagamento:</p><br>
 
@@ -125,7 +125,8 @@
                 </label>
 
                 <div class="conteudo-agendar">
-                    <button class="btn btn-lista fundo-roxo-500 texto-branco" type="submit">Agendar</button>
+                    <button class="btn btn-lista fundo-roxo-500 texto-branco" type="submit"
+                        id="confirmar">Agendar</button>
                 </div>
             </form>
         </div>
@@ -135,7 +136,7 @@
 
                     <tr>
                         <td class="titulo-calendario fundo-roxo-500" colspan="7">
-                            <span style="font-weight:bold">Calendário</span>
+                            <id style="font-weight:bold">Calendário</id>
                         </td>
                     </tr>
 
@@ -415,7 +416,12 @@
 
     </footer>
 
+    <dialog id="modal">
+        <button type="button" id="fechar">fechar</button>
+    </dialog>
 
+    <script src="modal.js"></script>
 </body>
+
 
 </html>
