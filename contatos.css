@@ -3,6 +3,10 @@
     box-shadow: 1px 1px 6px #4F4F4F;
 }
 
+h1 {
+    margin-inline-start: 27px;
+}
+
 .formulario {
     display: flex;
     justify-content: center;

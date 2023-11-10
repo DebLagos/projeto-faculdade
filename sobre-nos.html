@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre-Nos</title>
     <link rel="stylesheet" href="componentes.css">
     <link rel="stylesheet" href="palheta.css">
     <link rel="stylesheet" href="titulos.css">
     <link rel="stylesheet" href="fonts/remixicon.css">
     <link rel="stylesheet" href="pagamentos.css">
+    <link rel="stylesheet" href="sobre-nos.css">
+
+
+    <style>
+        .card {
+            justify-content: space-evenly;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -24,7 +33,7 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="#">Início</a>
+                        <a href="home.html">Início</a>
                     </li>
                     <li>
                         <a href="#">Consulta</a>
@@ -33,10 +42,10 @@
                         <a href="#">Exames</a>
                     </li>
                     <li>
-                        <a href="#">Sobre nós</a>
+                        <a href="sobre-nos.html">Sobre nós</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="tela-contato.html">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -44,49 +53,76 @@
         </div>
     </header>
     <div class="cover-sobre-nos">
-        <img src="images/sobrenos.jpg" style="width: 100%;">
+        <img src="images/sobre-nos.jpg" class="imagem-principal" style="width: 100%;">
     </div>
+
+
     <div class="conteudo-principal">
-        <div class="conteudo-sobre-nos">
-            <h1> Sobre nós</h1>
-            <div class="row-sobre-nos">
-                <div>
+
+
+        <div class="artigos">
+
+            <h1>Sobre Nós</h1>
+
+            <div class="card">
+
+                <div class="card-imagem margin-left-32px">
+                    <img src="images/imgmissao.jpg">
+                </div>
+
+                <div class="card-artigo card-artigo-esquerda">
                     <h2>Missão</h2>
-                    Facilitar o acesso à saúde por meio de tecnologia inovadora, simplificando o sistema de saúde e
-                    oferecendo
-                    ferramentas para melhorar a qualidade de vida dos pacientes e profissionais de saúde.
-                </div>
-                <div class="img-container">
 
-                    <img src="images/imgmissao.jpg" />
+                    <p>
+
+                        Facilitar o acesso à saúde por meio de tecnologia inovadora, simplificando o sistema
+                        de saúde e oferecendo ferramentas
+                        para melhorar a qualidade de vida dos pacientes e profissionais de saúde.
+
+
+                    </p>
+
                 </div>
+
             </div>
 
-            <div class="row-sobre-nos">
-                <div class="img-container">
-                    <img src="images/imgvisao.webp" />
-                </div>
-                <div>
+            <div class="card">
+
+                <div class="card-artigo card-artigo-esquerda">
                     <h2>Visão</h2>
-                    Ser a principal plataforma de referência para a gestão integrada de informações médicas,
-                    proporcionando
-                    cuidados
-                    de saúde acessíveis e personalizados, enriquecendo vidas em todas as fases.
+                    <p>
+                        Ser a principal plataforma de referência para a gestão integrada de informações médicas,
+                        proporcionando cuidados de
+                        saúde acessíveis e personalizados, enriquecendo vidas em todas as fases.
+
+                    </p>
+                </div>
+                <div class="card-imagem margin-left-32px">
+                    <img src="images/imgvisao.webp">
                 </div>
             </div>
+            <div class="card">
 
-            <div class="row-sobre-nos">
-                <div>
+                <div class="card-imagem imagem-300 margin-32px margin-left-0">
+                    <img src="images/imgvalores.webp">
+                </div>
+
+                <div class="card-artigo card-artigo-esquerda">
                     <h2>Valores</h2>
+                    <p>
+                        Transparência, Confiança, Acessibilidade, Empatia, Simplicidade, Segurança, Responsabilidade,
+                        Inclusão.
+                    </p>
+                </div>
 
-                    Transparência, Confiança, Acessibilidade, Empatia, Simplicidade, Segurança, Responsabilidade,
-                    Inclusão.
-                </div>
-                <div class="img-container">
-                    <img src="images/imgvalores.webp" />
-                </div>
             </div>
+
+
+
+
         </div>
+
+
     </div>
 
     <footer class="rodape fundo-branco">

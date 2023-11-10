@@ -4,7 +4,7 @@
 var modal_pagamento = document.getElementById("modal_pagamento");
 var modal_ver_detalhes = document.getElementById("modal_ver_detalhe");
 var modal_cancelar = document.getElementById("modal_cancelar");
-
+var modal_enviar = document.getElementById("modal_enviar");
 
 
 //------------------------------Fechar-------------------------------------------
@@ -30,7 +30,9 @@ if (btn_fechar.length > 0) {
             if (modal_pagamento) {
                 modal_pagamento.close();
             }
-
+            if (modal_enviar) {
+                modal_enviar.close();
+            }
 
 
         })
@@ -98,6 +100,15 @@ if (btn_cancelar.length > 0) {
         })
     }
 
+}
+var form_contato = document.getElementById("form-contato");
+
+if (form_contato) {
+    form_contato.addEventListener("submit", function (evento) {
+        //previni o evento padrao
+        evento.preventDefault();
+        modal_enviar.showModal();
+    })
 }
 
 

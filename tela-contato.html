@@ -31,7 +31,7 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="#">Início</a>
+                        <a href="home.html">Início</a>
                     </li>
                     <li>
                         <a href="#">Consulta</a>
@@ -40,28 +40,32 @@
                         <a href="#">Exames</a>
                     </li>
                     <li>
-                        <a href="#">Sobre nós</a>
+                        <a href="sobre-nos.html">Sobre nós</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="tela-contato.html">Contato</a>
                     </li>
                 </ul>
             </div>
             <a href="#" class="btn fundo-roxo-500 texto-branco">Entrar</a>
         </div>
     </header>
+    <div class="cover-contato">
+        <img src="images/contato-medvida.jpg" alt="" class="imagem-principal" style="width: 100%;">
+    </div>
 
     <div class="conteudo-principal">
 
-        <img src="images/contato-medvida.jpg" alt="" class="imagem-principal">
 
+        <h1>
+            Fale Conosco
+        </h1>
 
         <div class="formulario">
-            <form class="conteudo-contato">
+            <form class="conteudo-contato" novalidate id="form-contato">
+
                 <div class="conteudo-listagem">
-                    <h1>
-                        Fale Conosco
-                    </h1>
+
                     <br>
                     <h3>
                         Solicitar informações
@@ -88,7 +92,8 @@
 
                     </div>
                     <div class="conteudo-enviar">
-                        <button class="btn btn-lista fundo-roxo-500 texto-branco" type="submit">Enviar</button>
+                        <button class="btn btn-lista fundo-roxo-500 texto-branco" id="enviar"
+                            type="submit">Enviar</button>
                         <br><br>
 
                     </div>
@@ -156,6 +161,10 @@
 
     </footer>
 
+    <dialog id="modal_enviar">
+        <button type="button" class="fechar">fechar</button>
+    </dialog>
+    <script src=" modal.js"></script>
 
 </body>
 
