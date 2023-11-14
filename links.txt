@@ -2,8 +2,6 @@ Link para os icones:
 
 https://remixicon.com/
 
-
-
 NOTA: 
 https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
 Estudar como funcionar e se comporta o Display Flex e seus atributos como justify-between, align-items, flex-direction etc.....
