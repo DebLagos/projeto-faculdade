@@ -1,0 +1,106 @@
+.calendario {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.agenda tr,
+.agenda td {
+
+    /* border: 1px solid #C2C2C2; */
+    /* padding: 5px; */
+    text-align: center;
+}
+
+.dias-passados {
+    color: #C9B0D8;
+}
+
+/* componentes para selecionar a caixa do dia*/
+.agenda label {
+    width: 100%;
+    display: flex;
+}
+
+/*então se o input estiver checado ele vai selecionar o span*/
+.agenda input:checked+span {
+    background-color: #C9B0D8;
+
+}
+
+.agenda input+span {
+
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+/*ocutar os radios do calendario*/
+.agenda input[type="radio"] {
+
+    display: none;
+}
+
+.agenda {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.agenda span:hover {
+    background-color: #C9B0D8;
+}
+
+.agenda tr:first-child td {
+    border-radius: 80px;
+}
+
+.calendario .card {
+    padding: 13px;
+}
+
+.mes {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 25px;
+
+}
+
+.conteudo-modal {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.conteudo-informacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+
+}
+
+.dias-da-semana {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.margin-left-32px {
+    /* margin-left: 20px; */
+}
+
+.fechar_modal {
+    display: flex;
+    justify-content: right;
+}
+
+.h1-titulo {
+    font-size: 22px;
+    margin-left: 172px;
+}
