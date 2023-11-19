@@ -5,11 +5,12 @@ var modal_pagamento = document.getElementById("modal_pagamento");
 var modal_ver_detalhes = document.getElementById("modal_ver_detalhe");
 var modal_cancelar = document.getElementById("modal_cancelar");
 var modal_enviar = document.getElementById("modal_enviar");
+var modal_saiba_mais = document.getElementById("modal_saiba_mais");
 
 
 //------------------------------Fechar-------------------------------------------
 
-var btn_fechar = document.getElementsByClassName("fechar");
+var btn_fechar = document.getElementsByClassName("js-fechar");
 
 if (btn_fechar.length > 0) {
 
@@ -32,6 +33,9 @@ if (btn_fechar.length > 0) {
             }
             if (modal_enviar) {
                 modal_enviar.close();
+            }
+            if (modal_saiba_mais) {
+                modal_saiba_mais.close();
             }
 
 
@@ -111,4 +115,22 @@ if (form_contato) {
     })
 }
 
+//pegado todos elementos da classe js-ver-detalhes(mais de um elemento)
+var btn_saiba_mais = document.getElementsByClassName("js-saiba-mais");
+//se encontrar pelo menos um elemento
+if (btn_saiba_mais.length > 0) {
+
+
+    //entra na repetição pegando elementos da lista 
+    for (i = 0; i < btn_saiba_mais.length; i++) {
+
+        //adiciona o evento para cada elemento da lista com captura de click
+        btn_saiba_mais[i].addEventListener("click", function (evento) {
+            //previni o evento padrao
+            evento.preventDefault();
+            modal_saiba_mais.showModal();
+        })
+    }
+
+}
 

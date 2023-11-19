@@ -64,6 +64,58 @@
 
 }
 
+.saiba-mais {
+    font-weight: bold;
+}
+
+
+.saiba-mais:hover {
+    font-weight: bold;
+    color: #A47BBE;
+}
+
+.info-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #A47BBE;
+    /* Cor de fundo da bolinha */
+    border-radius: 50%;
+    /* Torna a bolinha circular */
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    /* Cor do "i" dentro da bolinha */
+    font-size: 13px;
+    /* Tamanho do "i" */
+}
+
+.btn-info {
+    border: none;
+    background-color: #ffffff;
+    font-size: 17px;
+    ;
+}
+
+.btn-agendar {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    height: 30px;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+    transition: all .125s;
+}
+
+.btn-agendar:hover {
+    background-color: #ffffff;
+    border: 1px solid #A47BBE;
+    color: #A47BBE;
+}
+
 dialog {
 
     padding: 40px;
