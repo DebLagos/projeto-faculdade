@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div class="access">
+        <div class="title">
+            <h1>Validação de Acesso</h1>
+        </div>
+        <form>
+            <ul>
+                <li>
+                    <a href="login-medico.html" class="access-doctor-paciente">
+                        <input type="radio" name="iaccess" id="doctor" value="medico">
+                        Médico
+                    </a>
+                </li>
+                <li class="input-label-sem-link">
+                    <input type="radio" name="iaccess" id="patient" value="paciente" checked>
+                    <label for="patient">Paciente</label>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <form action="#" class="login">
+
+        <img src="logo-tipograh.png" alt="Logo medvida">
+
+        <div class="box-user">
+            <input type="email" name="email" id="email" required placeholder=" ">
+            <label for="email">E-mail</label>
+        </div>
+        <div class="box-user">
+            <input type="password" id="password" name="password" required placeholder=" ">
+            <label for="password">Senha</label>
+        </div>
+
+        <a href="password.html" class="forget">Esqueceu a senha?</a>
+
+        <button type="submit" href="#" class="btn">Entrar</button>
+
+        <a href="Cadastre.html" class="btn2">Cadastre-se</a>
+    </form>
+
+</body>
+
+</html>

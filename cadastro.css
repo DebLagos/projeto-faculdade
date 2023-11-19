@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.title h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.access ul {
+    list-style: none;
+    margin-top: 60px;
+    text-align: center;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.access li {
+    display: inline;
+}
+
+.login {
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-user {
+    position: relative;
+    width: 100%;
+}
+
+.box-user input {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #eeeeee;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.box-user label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #000000;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold ;
+}
+
+.box-user input:focus~label,
+.box-user input:valid~label,
+.box-user input:not(:placeholder-shown)~label
+{
+    top: -20px;
+    left: 0;
+    color: #A47BBE;
+    font-size: 12px;
+}
+
+.box-user input:focus,
+.box-user input:valid
+{
+    border-bottom-color:#A47BBE ;
+}
+
+.forget {
+    font-size: 12px;
+    color: #A47BBE;
+    align-self: end;
+    text-decoration: none;
+}
+
+.forget:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 12px 20px;
+    color: #ffffff;
+    background-color: #A47BBE;
+    border-radius: 5px ;
+    border: 2px solid #A47BBE;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 50px;
+    transition: .5s;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #A47BBE;
+    border: 2px solid #A47BBE;
+    cursor: pointer;
+}
+
+.btn2 {
+    font-size: 12px;
+    color: #A47BBE;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold ;
+
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #A47BBE;
+    border: 2px solid #A47BBE;
+}
+
+.access-doctor-paciente{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #000000;
+    font-weight: bold;
+}
+
+.input-label-sem-link {
+    font-weight: bold;
+    
+}
+
+.login img{
+    width: 30%;
+    padding: 20px 0;
+}
+
+
+
+
+
+/* LOGIN = Cadastre-se*/
+
+.title-center{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.termos{
+    align-self: flex-start  ;
+}
+
+.width-45{
+    width: 45%;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+input[type=checkbox] {
+    accent-color: #A47BBE;
+}
+
+
+
+
+.text-password{
+    text-align: center;
+    margin-top: 30px;
+    width: 490px;
+    
+}
