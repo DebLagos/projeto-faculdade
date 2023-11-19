@@ -1,0 +1,21 @@
+.dialog-cabeçalho {
+    display: flex;
+    justify-content: right;
+}
+
+.close {
+    border: none;
+    background-color: #ffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #ffffff;
+    color: #A47BBE;
+}
+
+.texto-modal {
+    font-size: 13px;
+    font-weight: 300;
+}

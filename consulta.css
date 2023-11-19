@@ -35,3 +35,8 @@ p {
     background-color: #ffffff;
     color: #A47BBE;
 }
+
+.texto-modal {
+    font-size: 13px;
+    font-weight: 300;
+}
