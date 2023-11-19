@@ -167,3 +167,48 @@ dialog {
     border: 1px solid #A47BBE;
     color: #A47BBE;
 }
+
+.modal-localizacao {
+    height: 300px;
+    width: 500px;
+
+}
+
+.texto-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.texto-secundario {
+    display: flex;
+
+}
+
+.endereco {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.fechamento {
+    border: none;
+    background-color: #ffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fechamento:hover {
+    background-color: #ffffff;
+    color: #A47BBE;
+}
+
+.fechar-modal {
+    display: flex;
+    justify-content: right;
+}
+
+.margin-rigth-30px {
+
+    margin-right: 30px;
+}
