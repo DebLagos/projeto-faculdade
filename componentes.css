@@ -33,6 +33,7 @@ a {
     padding-right: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+    outline: none;
     border: none;
     /* Arrendonda as pontas do botão */
     border-radius: 5px;
@@ -41,12 +42,13 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: all .125s;
 }
 
 .btn:hover {
     background-color: #ffffff;
     color: #A47BBE;
-    border: 1px solid #A47BBE;
+    outline: 1px solid #A47BBE;
 }
 
 .btn-grande {
@@ -79,6 +81,10 @@ a {
 .conteudo-logo {
     display: flex;
     align-items: flex-end;
+}
+
+input[type=checkbox] {
+    accent-color: #A47BBE;
 }
 
 /** ============== CABEÇALHO ==================================== */
@@ -116,18 +122,28 @@ a {
     justify-content: center;
     padding: 0px;
     list-style: none;
-
-
+    gap: 20px;
 }
 
 .menu ul li {
-    margin-right: 37px;
-
+    padding-inline: 10px;
+    position: relative;
 }
 
-.menu ul li:last-child {
-    margin-right: 0px;
+.menu ul li::before {
+    content: '';
+    height: 5px;
+    pointer-events: none;
+    background-color: #A47BBE;
+    width: 0;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: all .125s;
+}
 
+.menu ul li:hover::before {
+    width: 100%;
 }
 
 /** ======= INICIO CONTEUDO PRINCIPAL =================**/
@@ -154,6 +170,7 @@ a {
     border-radius: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-artigo {
@@ -184,12 +201,18 @@ a {
     margin-left: 0px;
 }
 
+.card-imagem {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 .card-imagem img {
     width: 400px;
-    height: 400px;
     object-fit: contain;
+    border-radius: 4px;
 }
 
 .imagem-300 img {
@@ -231,6 +254,15 @@ a {
 .redes-sociais li {
     margin-right: 20px;
     font-size: 30px;
+}
+
+.redes-sociais li i {
+    transition: color .125s;
+}
+
+.redes-sociais li i:hover {
+    cursor: pointer;
+    color: #A47BBE;
 }
 
 
