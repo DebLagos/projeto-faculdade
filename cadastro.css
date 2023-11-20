@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    /* margin: 0; */
     font-family: sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
     text-align: center;
     padding-left: 0;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .access li {
@@ -66,13 +66,12 @@ body {
     font-size: 16px;
     pointer-events: none;
     transition: .5s;
-    font-weight: bold ;
+    font-weight: bold;
 }
 
 .box-user input:focus~label,
 .box-user input:valid~label,
-.box-user input:not(:placeholder-shown)~label
-{
+.box-user input:not(:placeholder-shown)~label {
     top: -20px;
     left: 0;
     color: #A47BBE;
@@ -80,9 +79,8 @@ body {
 }
 
 .box-user input:focus,
-.box-user input:valid
-{
-    border-bottom-color:#A47BBE ;
+.box-user input:valid {
+    border-bottom-color: #A47BBE;
 }
 
 .forget {
@@ -92,7 +90,7 @@ body {
     text-decoration: none;
 }
 
-.forget:hover{
+.forget:hover {
     text-decoration: underline;
 }
 
@@ -102,7 +100,7 @@ body {
     padding: 12px 20px;
     color: #ffffff;
     background-color: #A47BBE;
-    border-radius: 5px ;
+    border-radius: 5px;
     border: 2px solid #A47BBE;
     text-decoration: none;
     font-size: 13px;
@@ -130,7 +128,7 @@ body {
     justify-content: center;
     margin-top: 20px;
     text-decoration: none;
-    font-weight: bold ;
+    font-weight: bold;
 
 }
 
@@ -141,7 +139,7 @@ body {
     border: 2px solid #A47BBE;
 }
 
-.access-doctor-paciente{
+.access-doctor-paciente {
     text-decoration: none;
     font-size: 16px;
     font-family: sans-serif;
@@ -151,10 +149,10 @@ body {
 
 .input-label-sem-link {
     font-weight: bold;
-    
+
 }
 
-.login img{
+.login img {
     width: 30%;
     padding: 20px 0;
 }
@@ -165,16 +163,16 @@ body {
 
 /* LOGIN = Cadastre-se*/
 
-.title-center{
+.title-center {
     text-align: center;
     margin-top: 35px;
 }
 
-.termos{
-    align-self: flex-start  ;
+.termos {
+    align-self: flex-start;
 }
 
-.width-45{
+.width-45 {
     width: 45%;
 }
 
@@ -182,7 +180,7 @@ body {
     display: flex;
 }
 
-.justify-between{
+.justify-between {
     justify-content: space-between;
 }
 
@@ -193,9 +191,9 @@ input[type=checkbox] {
 
 
 
-.text-password{
+.text-password {
     text-align: center;
     margin-top: 30px;
     width: 490px;
-    
+
 }

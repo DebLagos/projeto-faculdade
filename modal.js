@@ -6,7 +6,7 @@ var modal_ver_detalhes = document.getElementById("modal_ver_detalhe");
 var modal_cancelar = document.getElementById("modal_cancelar");
 var modal_enviar = document.getElementById("modal_enviar");
 var modal_saiba_mais = document.getElementById("modal_saiba_mais");
-
+var modal_senha = document.getElementById("modal_senha");
 
 //------------------------------Fechar-------------------------------------------
 
@@ -37,6 +37,9 @@ if (btn_fechar.length > 0) {
             if (modal_saiba_mais) {
                 modal_saiba_mais.close();
             }
+            if (modal_senha) {
+                modal_senha.close();
+            }
 
 
         })
@@ -62,8 +65,27 @@ if (form_pagamento) {
     })
 }
 
+var form_contato = document.getElementById("form-contato");
+
+if (form_contato) {
+    form_contato.addEventListener("submit", function (evento) {
+        //previni o evento padrao
+        evento.preventDefault();
+        modal_enviar.showModal();
+    })
+}
 
 
+
+var form_redefinir_senha = document.getElementById("form-redefinir-senha");
+
+if (form_redefinir_senha) {
+    form_redefinir_senha.addEventListener("submit", function (evento) {
+        //previni o evento padrao
+        evento.preventDefault();
+        modal_senha.showModal();
+    })
+}
 
 
 //pegado todos elementos da classe js-ver-detalhes(mais de um elemento)
@@ -105,15 +127,7 @@ if (btn_cancelar.length > 0) {
     }
 
 }
-var form_contato = document.getElementById("form-contato");
 
-if (form_contato) {
-    form_contato.addEventListener("submit", function (evento) {
-        //previni o evento padrao
-        evento.preventDefault();
-        modal_enviar.showModal();
-    })
-}
 
 //pegado todos elementos da classe js-ver-detalhes(mais de um elemento)
 var btn_saiba_mais = document.getElementsByClassName("js-saiba-mais");
@@ -121,16 +135,18 @@ var btn_saiba_mais = document.getElementsByClassName("js-saiba-mais");
 if (btn_saiba_mais.length > 0) {
 
 
-    //entra na repetição pegando elementos da lista 
+    // entra na repetição pegando elementos da lista//
     for (i = 0; i < btn_saiba_mais.length; i++) {
 
-        //adiciona o evento para cada elemento da lista com captura de click
+        //adiciona o evento para cada elemento da lista com captura de click//
         btn_saiba_mais[i].addEventListener("click", function (evento) {
-            //previni o evento padrao
+            //previni o evento padrao//
             evento.preventDefault();
             modal_saiba_mais.showModal();
         })
     }
+
+
 
 }
 
