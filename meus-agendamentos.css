@@ -218,6 +218,6 @@ dialog {
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
