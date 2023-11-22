@@ -91,10 +91,6 @@
     flex: 1;
 }
 
-.margin-left-32px {
-    /* margin-left: 20px; */
-}
-
 .fechar_modal {
     display: flex;
     justify-content: right;
