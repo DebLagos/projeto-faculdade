@@ -108,3 +108,10 @@
     width: 65%;
     margin: 0 auto;
 }
+
+.conteudo-horario {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #949494;
+    width: 80px;
+}
