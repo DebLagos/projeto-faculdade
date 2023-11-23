@@ -67,12 +67,16 @@
 
 .saiba-mais {
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 
 .saiba-mais:hover {
     font-weight: bold;
     color: #A47BBE;
+    cursor: pointer;
 }
 
 .info-icon {

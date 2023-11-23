@@ -13,35 +13,13 @@ var modal_senha = document.getElementById("modal_senha");
 var btn_fechar = document.getElementsByClassName("js-fechar");
 
 if (btn_fechar.length > 0) {
-
     for (i = 0; i < btn_fechar.length; i++) {
         btn_fechar[i].addEventListener("click", function (evento) {
             //previni o evento padrao
             evento.preventDefault();
 
-
-            if (modal_cancelar) {
-                modal_cancelar.close();
-            }
-
-            if (modal_ver_detalhes) {
-                modal_ver_detalhes.close();
-            }
-
-            if (modal_pagamento) {
-                modal_pagamento.close();
-            }
-            if (modal_enviar) {
-                modal_enviar.close();
-            }
-            if (modal_saiba_mais) {
-                modal_saiba_mais.close();
-            }
-            if (modal_senha) {
-                modal_senha.close();
-            }
-
-
+            const modal = evento.target.closest('dialog');
+            modal.close();
         })
     }
 }

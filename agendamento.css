@@ -72,12 +72,20 @@
 
 }
 
+.card-calendario {
+    border-radius: 1.5rem;
+}
+
 .calendario tr,
 .calendario td {
 
     /* border: 1px solid #C2C2C2; */
     /* padding: 5px; */
     text-align: center;
+}
+
+.titulo-calendario {
+    padding-block: 0.25rem;
 }
 
 .dias-passados {
@@ -93,7 +101,7 @@
 /*então se o input estiver checado ele vai selecionar o span*/
 .calendario input:checked+span {
     background-color: #C9B0D8;
-
+    font-weight: bold;
 }
 
 .calendario input+span {
@@ -102,6 +110,8 @@
     display: flex;
     padding: 10px;
     justify-content: center;
+    transition: 0.25s;
+    border-radius: 0.5rem;
 }
 
 /*ocutar os radios do calendario*/

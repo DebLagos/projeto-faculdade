@@ -1,10 +1,12 @@
+.card-calendario {
+    border-radius: 8px;
+}
+
 .calendario {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
 .agenda tr,

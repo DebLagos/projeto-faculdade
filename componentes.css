@@ -33,7 +33,7 @@ a {
     padding-right: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
-    outline: none;
+    outline: 2px solid transparent;
     border: none;
     /* Arrendonda as pontas do botão */
     border-radius: 5px;
@@ -48,7 +48,7 @@ a {
 .btn:hover {
     background-color: #ffffff;
     color: #A47BBE;
-    outline: 1px solid #A47BBE;
+    outline: 2px solid #A47BBE;
 }
 
 .btn-grande {
@@ -258,11 +258,14 @@ input[type=checkbox] {
 
 .redes-sociais li i {
     transition: color .125s;
+
 }
 
 .redes-sociais li i:hover {
     cursor: pointer;
-    color: #A47BBE;
+    color: #a47bbe;
+    /* filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.15)); */
+    filter: drop-shadow(0 0 4px rgba(201, 115, 255, 0.55));
 }
 
 
