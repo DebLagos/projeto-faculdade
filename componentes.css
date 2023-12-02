@@ -60,6 +60,49 @@ a {
     justify-content: center;
 }
 
+.input-field {
+    position: relative;
+    width: 100%;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #d4d4d4;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.input-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #000000;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label,
+.input-field input:not(:placeholder-shown)~label {
+    top: -20px;
+    left: 0;
+    color: #A47BBE;
+    font-size: 12px;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+    border-bottom-color: #A47BBE;
+}
+
 .logo {
     /* width: 190px; */
     /* height: 61px; */
