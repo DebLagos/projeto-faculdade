@@ -40,49 +40,6 @@ body {
     align-items: center;
 }
 
-.box-user {
-    position: relative;
-    width: 100%;
-}
-
-.box-user input {
-    width: 100%;
-    padding: 10px 0;
-    outline: none;
-    border: 0;
-    background: transparent;
-    border-bottom: 1px solid #eeeeee;
-    color: #000000;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-.box-user label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    color: #000000;
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-    font-weight: bold;
-}
-
-.box-user input:focus~label,
-.box-user input:valid~label,
-.box-user input:not(:placeholder-shown)~label {
-    top: -20px;
-    left: 0;
-    color: #A47BBE;
-    font-size: 12px;
-}
-
-.box-user input:focus,
-.box-user input:valid {
-    border-bottom-color: #A47BBE;
-}
-
 .forget {
     font-size: 12px;
     color: #A47BBE;

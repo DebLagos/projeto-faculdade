@@ -33,7 +33,7 @@ a {
     padding-right: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
-    outline: none;
+    outline: 2px solid transparent;
     border: none;
     /* Arrendonda as pontas do botão */
     border-radius: 5px;
@@ -48,7 +48,7 @@ a {
 .btn:hover {
     background-color: #ffffff;
     color: #A47BBE;
-    outline: 1px solid #A47BBE;
+    outline: 2px solid #A47BBE;
 }
 
 .btn-grande {
@@ -58,6 +58,49 @@ a {
 .btn-sair {
     width: 50px;
     justify-content: center;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #d4d4d4;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.input-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #000000;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label,
+.input-field input:not(:placeholder-shown)~label {
+    top: -20px;
+    left: 0;
+    color: #A47BBE;
+    font-size: 12px;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+    border-bottom-color: #A47BBE;
 }
 
 .logo {
@@ -258,11 +301,14 @@ input[type=checkbox] {
 
 .redes-sociais li i {
     transition: color .125s;
+
 }
 
 .redes-sociais li i:hover {
     cursor: pointer;
-    color: #A47BBE;
+    color: #a47bbe;
+    /* filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.15)); */
+    filter: drop-shadow(0 0 4px rgba(201, 115, 255, 0.55));
 }
 
 
