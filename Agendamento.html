@@ -18,7 +18,7 @@
     <header class="cabecalho fundo-branco">
         <div class="conteudo-cabecalho">
             <div class="conteudo-logo">
-                <a href="/">
+                <a href="index.html">
                     <img src="images/logo-med.png" alt="" class="logo logo-icone">
 
                     <img src="images/logo-tipograh.png" alt="" class="logo logo-texto ">
@@ -29,7 +29,7 @@
         </div>
     </header>
     <div class="conteudo-principal">
-        <div class="conteudo-pagamento">
+        <div class="conteudo-de-agendamento">
             <h1>Agendamento</h1>
             <h2>
                 Dermatologista
@@ -39,48 +39,47 @@
                 diversas doenças
                 relacionadas à nossa pele.
             </p>
-            <form id="form-pagamento" novalidate class="form-pagameto">
+            <form id="form-de-agendamento" novalidate class="form-de-agendamento">
 
                 <p>Pré-Cadastro</p>
 
                 <div class="input-field">
-                    <input type="text" id="name" name="name" required placeholder=" " 
-                    required="required" maxlength="50">
+                    <input type="text" id="name" name="name" required placeholder=" " required="required"
+                        maxlength="50">
                     <label for="name">Nome Completo *</label>
                 </div>
 
                 <div class="input-field">
-                    <input type="tel" id="phone-number" name="phone-number" required
-                    placeholder=" " pattern="\d{2}\s?\d{4,5}-?\d{4}"
-                    title="Digite o Telefone no formato: (00)00000-0000">
+                    <input type="tel" id="phone-number" name="phone-number" required placeholder=" "
+                        pattern="\d{2}\s?\d{4,5}-?\d{4}" title="Digite o Telefone no formato: (00)00000-0000">
                     <label for="phone-number"> Telefone *</label>
                 </div>
 
                 <div class="input-field">
                     <input type="text" id="cpf" name="cpf" class="cpf-field" placeholder=" "
-                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}|\d{3}\d{3}\d{3}\d{2}" title="Digite o CPF no formato: 000.000.000-00" required>
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}|\d{3}\d{3}\d{3}\d{2}"
+                        title="Digite o CPF no formato: 000.000.000-00" required>
                     <label for="cpf">CPF *</label>
                 </div>
 
                 <div class="input-field">
                     <input type="text" id="rg" name="rg" placeholder=" "
-                    pattern="[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[0-9Xx]{1}"
-                    title="Digite o RG no formato: 00.000.000-X" required>
+                        pattern="[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[0-9Xx]{1}" title="Digite o RG no formato: 00.000.000-X"
+                        required>
                     <label for="rg">RG *</label>
                 </div>
 
                 <div class="input-field">
                     <input type="email" required="required" placeholder=" ">
                     <label for="email">E-mail *</label>
-                </div>  
+                </div>
 
                 <div class="input-field">
-                    <input type="time" name="horario" id="horario" 
-                    min="8:00" max="18:00"step="1800" required>
+                    <input type="time" name="horario" id="horario" min="8:00" max="18:00" step="1800" required>
                     <label for="horario">Escolha um horário *</label>
                 </div>
 
-                <label class="conteudo-salvar-cartao" for="salvarCartao">
+                <label class="conteudo-salvar-inform" for="salvarinform">
 
                     <input type="checkbox" id="salvarCartao" name="salvarCartao" value="sim">
                     Salvar informações do Agendamento
@@ -334,13 +333,20 @@
                 </p>
                 <ul class="redes-sociais">
                     <li>
+
                         <i class="ri-whatsapp-line"></i>
+
                     </li>
                     <li>
-                        <i class="ri-instagram-line"></i>
+                        <a href="https://www.instagram.com/consultoriosmedvida/?igshid=NGVhN2U2NjQ0Yg%3D%3D" <i
+                            class="ri-instagram-line"></i>
+                        </a>
                     </li>
                     <li>
-                        <i class="ri-facebook-circle-fill"></i>
+                        <a
+                            href="https://www.facebook.com/people/Consult%C3%B3rios-MedVida/100063608281075/?mibextid=ZbWKwL">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
                     </li>
 
                 </ul>
@@ -378,7 +384,7 @@
 
     </footer>
 
-    <dialog id="modal_pagamento">
+    <dialog id="modal_de_agendamento">
         <div class="dialog-header">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpcZaw5yw5jJbfPzynyJ3SvprAZBB5vROhZqOY1E9ebf_6XAxu6K3FDSw9oSA26-oRSGo&usqp=CAU"
                 alt="" class="imagem-sucesso">
@@ -387,7 +393,7 @@
             <p>Agendamento realizado com sucesso!</p>
         </div>
         <div class="dialog-footer">
-            <a href="meus-agendamentos.html" class="pagamento-efetuado">OK</a>
+            <a href="meus-agendamentos.html" class="agendamento-efetuado">OK</a>
         </div>
     </dialog>
 

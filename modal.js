@@ -1,7 +1,7 @@
 
 //------------------------------Modal----------------------------------------
 
-var modal_pagamento = document.getElementById("modal_pagamento");
+var modal_de_agendamento = document.getElementById("modal_de_agendamento");
 var modal_ver_detalhes = document.getElementById("modal_ver_detalhe");
 var modal_cancelar = document.getElementById("modal_cancelar");
 var modal_enviar = document.getElementById("modal_enviar");
@@ -33,13 +33,13 @@ if (btn_fechar.length > 0) {
 //--------------------------------------------------------------Abrir Modal--------------------------------------------------------------
 
 //pegando elemento html pelo id (um unico elemento)
-var form_pagamento = document.getElementById("form-pagamento");
+var form_de_agendamento = document.getElementById("form-de-agendamento");
 
-if (form_pagamento) {
-    form_pagamento.addEventListener("submit", function (evento) {
+if (form_de_agendamento) {
+    form_de_agendamento.addEventListener("submit", function (evento) {
         //previni o evento padrao
         evento.preventDefault();
-        modal_pagamento.showModal();
+        modal_de_agendamento.showModal();
     })
 }
 

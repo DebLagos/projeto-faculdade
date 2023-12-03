@@ -3,13 +3,13 @@
     flex-direction: row;
 }
 
-.conteudo-pagamento {
+.conteudo-de-agendamento {
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.conteudo-cartao {
+/* .conteudo-cartao {
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #a4b0be;
@@ -24,14 +24,14 @@
     padding: 3px !important;
     outline: none;
     width: 100%;
-}
+} */
 
-.conteudo-vencimento select {
+/* .conteudo-vencimento select {
     border-radius: 5px;
     padding: 5px;
     border: 1px solid #949494;
     width: 100px;
-}
+} */
 
 .conteudo-horario {
     border-radius: 5px;
@@ -40,11 +40,11 @@
     width: 200px;
 }
 
-.form-pagameto {
+.form-de-agendamento {
     padding-right: 15rem;
 }
 
-.form-pagameto button {
+.form-de-agendamento button {
     width: 175px;
     justify-content: center;
     padding: 5px;
@@ -141,7 +141,7 @@
 
 }
 
-.conteudo-salvar-cartao {
+.conteudo-salvar-inform {
     display: inline-flex;
 }
 
@@ -177,7 +177,7 @@ dialog {
 
 }
 
-.pagamento-efetuado {
+.agendamento-efetuado {
     width: 80px;
     padding: 10px;
     cursor: pointer;
@@ -188,7 +188,7 @@ dialog {
 
 }
 
-.pagamento-efetuado:hover {
+.agendamento-efetuado:hover {
     background-color: #ffffff;
     border: 1px solid #A47BBE;
     color: #A47BBE;
@@ -198,6 +198,6 @@ dialog {
     margin-bottom: 1rem;
 }
 
-.input-field input[type=time]:not(:focus) + label {
+.input-field input[type=time]:not(:focus)+label {
     color: black;
 }
